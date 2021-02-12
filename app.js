@@ -11,7 +11,7 @@ const fs = require("fs");
 const dataOutput = fs.readFileSync("dataOutput.html", "utf-8");
 
 app.use(express.static('public'))
-app.use('/', express.static('public'))
+app.use('/weatherdata', express.static('public'))
 
 const replaceVal = (tempVal, orgVal) => {
   let temperature = tempVal.replace("{%tempval%}", orgVal.main.temp);
