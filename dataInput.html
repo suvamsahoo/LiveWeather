@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/styles/dataInput.css">
+  </head>
+
+  <body>
+    <div class="banner">
+      <video autoplay muted loop>
+        <source src="/videos/v1.mp4" type="video/mp4" />
+      </video>
+
+      <form action="/" method="POST">
+        <label for="cityInput">City</label>
+        <input
+          id="cityInput"
+          type="text"
+          name="cityName"
+          placeholder="Name"
+        />
+        <button type="submit">Go</button
+        ><!--when button will click, this data will pass to post-->
+      </form>
+    </div>
+  </body>
+</html>
