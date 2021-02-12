@@ -32,7 +32,7 @@ app.get("/", function (req, res) {
   res.sendFile(__dirname + "/dataInput.html");
 });
 
-app.post("/", function (req, res) {
+app.post("/weatherdata", function (req, res) {
   const query = req.body.cityName;
   const apiKey = process.env.APIkey;
   const unit = "metric";
